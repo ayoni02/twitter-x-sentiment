@@ -85,8 +85,8 @@ def main():
                 
             else:
                 st.write('No tweets found')
-    else:
-        st.write('Authentication Failed, please reload the page and rewrite your credentials')
+        else:
+            st.write('Authentication Failed, please reload the page and rewrite your credentials')
 
 
 main()
