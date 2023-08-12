@@ -75,7 +75,7 @@ def main():
             if len(df) > 0:
                 
                 pipeline = joblib.load('pipeline.pkl')
-                # df = model(df, pipeline)
+                df = model(df, pipeline)
                 st.write(len(df))
                 md = len(df[df['User'] != query])
                 st.write(f'Number of tweets made by others on {query} is {md} out of {len(df)}')
