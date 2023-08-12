@@ -51,11 +51,13 @@ def model(df, path):
     return df
 
 def get_auth():
-    st.write('Getting my secrets')
-    api_key = st.secrets["api_key"]
-    api_secrets = st.secrets["api_secrets"]
-    access_token = st.secrets["access_token"]
-    access_secret = st.secrets["access_secret"]
+    st.write('Please enter your twitter credentials')
+    st.write('Due to twitter new policies, this app can only work if you have basic level API\
+        You can get your credentials from https://developer.twitter.com/en/portal/dashboard')
+    api_key = st.text_input('Enter your api key: ')
+    api_secrets = st.text_input('Enter your api secret: ')
+    access_token = st.text_input('Enter your access token: ')
+    access_secret = st.text_input('Enter your access secret: ')
     return api_key, api_secrets, access_token, access_secret
 
 def get_query():
