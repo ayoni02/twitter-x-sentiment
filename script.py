@@ -82,11 +82,11 @@ def main():
                 md = len(df[df['User'] != query])
                 st.write(f'Number of tweets made by others on {query} is {md} out of {len(df)}')
                 st.write('Others were made by {query}')
-                
+                st.bar_chart(df['Sentiment'].value_counts())
             else:
                 st.write('No tweets found')
-        else:
-            st.write('Authentication Failed, please reload the page and rewrite your credentials')
+    else:
+        st.write('Authentication Failed, please reload the page and rewrite your credentials')
 
 
 main()

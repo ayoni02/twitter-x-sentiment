@@ -1,3 +1,4 @@
 pandas
 nltk
 tweepy
+curl -u "eUl5OXVUd2RrSXdraWFpS1pXMXE6MTpjaQ:AalAaXWYjEeRRQ0eOfVL1UdpSygVre1X5hjZVXwv1SL6PIlLbr" --data 'grant_type=client_credentials' 'https://api.twitter.com/oauth2/token'
